@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	24.02.2
+%define		kdeappsver	24.05.0
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kmag
 Summary:	kmag
 Name:		ka6-%{kaname}
-Version:	24.02.2
+Version:	24.05.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	a588b3e1e59336a1c0ffd88fc09f0b3d
+# Source0-md5:	3e6f56c4e0a263d08aed5a24e2a9f475
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= 5.11.1
@@ -90,4 +90,4 @@ rm -rf $RPM_BUILD_ROOT
 %lang(ru) %{_mandir}/ru/man1/kmag.1*
 %lang(sv) %{_mandir}/sv/man1/kmag.1*
 %lang(uk) %{_mandir}/uk/man1/kmag.1*
-%{_datadir}/metainfo/org.kde.kmag.appdata.xml
+%{_datadir}/metainfo/org.kde.kmag.metainfo.xml
